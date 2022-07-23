@@ -2,7 +2,7 @@ const { validationResult } = require('express-validator')
 const { generateMerchantToken, checkEncryption, parseJwt } = require('../middleware/authToken')
 const { badRequest, success, unknownError } = require('../helpers/response.helper')
 const { addClient, checkLogin, editClient, clientByEmail,clientById } = require('../helpers/client.helpers')
-const { addBooking, getClientBooking, bookingdetailsById } = require('../helpers/booking.helpers')
+// const { addBooking, getClientBooking, bookingdetailsById } = require('../helpers/booking.helpers')
 
 
 module.exports = {

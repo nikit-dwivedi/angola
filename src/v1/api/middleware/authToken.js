@@ -10,11 +10,9 @@ const { forbidden, unauthorized } = require('../helpers/response.helper');
 //-------------------------------------------------privateKey----------------------------------------------//
 const adminPrivateKEY = fs.readFileSync("./key/admin.private.pem", "utf8");
 const userPrivateKEY = fs.readFileSync("./key/user.private.pem", "utf8");
-const MerchantPrivateKEY = fs.readFileSync("./key/merchant.private.pem", "utf8");
 
 //--------------------------------------------------publicKey----------------------------------------------//
 const adminPublicKEY = fs.readFileSync("./key/admin.public.pem", "utf8");
-const MerchantPublicKEY = fs.readFileSync("./key/merchant.public.pem", "utf8");
 const userPublicKEY = fs.readFileSync("./key/user.public.pem", "utf8");
 
 //--------------------------------------------------options-------------------------------------------------//
